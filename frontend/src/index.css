@@ -1,0 +1,60 @@
+:root {
+  --bg-base: #080808;
+  --bg-surface: #111111;
+  --bg-elevated: #1C1C1C;
+  --border: rgba(255,255,255,0.06);
+  --accent: #4F8EF7;
+  --accent-orange: #F97316;
+  --green: #22C55E;
+  --red: #EF4444;
+  --text-primary: #F5F5F5;
+  --text-secondary: #9CA3AF;
+  --text-muted: #4B5563;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #080808;
+  color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input, textarea, select, button {
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.slide-up { animation: slideUp 0.3s ease-out; }
